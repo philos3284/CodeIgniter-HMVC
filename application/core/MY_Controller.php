@@ -1,17 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class MY_Controller extends MX_Controller {
+class MY_Controller extends MX_Controller 
+{
 
-	/**
+    /**
      * NOTE:
      * All controllers MUST extend MX_Controller, otherwise, use the MY_Controller created for your convenience, instead of MX_Controller directly.
      * You can read about controller prefixes and subclasses in the CI Manual. 
      * 
-	 * Base Module Controller
-	 *
-	 * Extends the HMVC Plugin.
-	 */
+     * Base Module Controller
+     *
+     * Extends the HMVC Plugin.
+     */
  
     public function __construct()
     {
@@ -20,8 +21,8 @@ class MY_Controller extends MX_Controller {
 	  $this->form_validation->CI =& $this;
     }
 	
-	public function index()
-	{
-	}
+    public function index()
+    {
+    }
 	
 }
