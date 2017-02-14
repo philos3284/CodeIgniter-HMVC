@@ -1,15 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class MY_Form_validation extends CI_Form_validation {
-
+class MY_Form_validation extends CI_Form_validation 
+{
   public $CI; // Propery set to fix callback error
   
-	/**
-	 * Extends CI Form Validation.
-	 *
-	 * Fix for (HMVC) Extension.
-	 */
+/**
+ * Extends CI Form Validation.
+ *
+ * Fix for (HMVC) Extension.
+ */
 	 
   public function run($module = '', $group = '')
   {
@@ -17,19 +17,3 @@ class MY_Form_validation extends CI_Form_validation {
     return parent::run($group);
   }
 }
-
-  
-/*
- 
-Original Code:
--------------------
-
-  class MY_Form_validation extends CI_Form_validation {
-
-    function run($module = '', $group = ''){
-      (is_object($module)) AND $this->CI = &$module;
-      return parent::run($group);
-    }
-  }
-  
-*/
