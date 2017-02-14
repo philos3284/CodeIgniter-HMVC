@@ -286,10 +286,10 @@ class MX_Loader extends CI_Loader
 		return $this;
 	}
 	
-    /** EDIT: Fix Loader.php for CI 3.1.3 **/
-    protected function _ci_object_to_array($object) {
-        return is_object($object) ? get_object_vars($object) : $object;
-    }
+        /** EDIT: Fix Loader.php for CI 3.1.3 **/
+        protected function _ci_object_to_array($object) {
+		return is_object($object) ? get_object_vars($object) : $object;
+        }
 
 	/** Load a module view **/
 	public function view($view, $vars = array(), $return = FALSE)
