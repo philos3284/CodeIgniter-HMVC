@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome_controller extends MY_Controller 
+class Welcome_controller extends MX_Controller 
 {
  
     public function __construct()
