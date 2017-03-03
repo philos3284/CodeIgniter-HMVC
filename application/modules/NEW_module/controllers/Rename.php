@@ -7,7 +7,7 @@ class Rename extends MX_Controller
     public function __construct()
     {
       parent::__construct();
-      //IMPORTANT: Add the line below to ALL controllers in order to use callbacks during form validation.
+     // IMPORTANT: Add this line to all controllers to prevent callback errors when using form validation.
         $this->form_validation->CI =& $this;
     }
 	
