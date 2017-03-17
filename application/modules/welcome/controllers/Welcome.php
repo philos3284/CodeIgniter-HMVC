@@ -20,4 +20,10 @@ class Welcome extends MX_Controller
       $this->load->view('welcome');
     }
 	
+    public function get($param) 
+    {
+      $query = $this->model->get($param);
+      return $query;
+    }
+	
 }
