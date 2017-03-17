@@ -7,7 +7,9 @@ class Rename extends MX_Controller
     public function __construct()
     {
       parent::__construct();
-     // IMPORTANT: Add this line to all controllers to prevent callback errors when using form validation.
+     // IMPORTANT: Add these lines to all controllers to prevent callback errors when using form validation.
+     // NOTE: If you autoload the form_validation class you don't need to call it here
+        $this->load->library('form_validation');
         $this->form_validation->CI =& $this;
         $this->load->model('INSERT_MODEL_NAME_HERE');
     }
@@ -41,19 +43,19 @@ class Rename extends MX_Controller
       return $query;
     }
 
-    public function _insert($data) 
+    private function insert($data) 
     {
-      $this->INSERT_MODEL_NAME_HERE->_insert($data);
+      $this->INSERT_MODEL_NAME_HERE->insert($data);
     }
 
-    public function _update($id, $data) 
+    private function update($id, $data) 
     {
-      $this->INSERT_MODEL_NAME_HERE->_update($id, $data);
+      $this->INSERT_MODEL_NAME_HERE->update($id, $data);
     }
 
-    public function _delete($id) 
+    private function delete($id) 
     {
-      $this->INSERT_MODEL_NAME_HERE->_delete($id);
+      $this->INSERT_MODEL_NAME_HERE->delete($id);
     }
 
     public function count_where($column, $value) 
@@ -68,9 +70,9 @@ class Rename extends MX_Controller
       return $max_id;
     }
 
-    public function _custom_query($mysql_query) 
+    private function custom_query($mysql_query) 
     {
-      $query = $this->INSERT_MODEL_NAME_HERE->_custom_query($mysql_query);
+      $query = $this->INSERT_MODEL_NAME_HERE->custom_query($mysql_query);
       return $query;
     }
 
