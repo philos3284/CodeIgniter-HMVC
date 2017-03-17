@@ -2,7 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends MX_Controller 
 {
-    private $model = $this->load->model('INSERT_MODEL_NAME_HERE');   
+    private $model = $this->load->model('INSERT_MODEL_NAME_HERE');
+
     public function __construct()
     {
       parent::__construct();
