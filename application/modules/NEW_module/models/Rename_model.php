@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-private $table = 'INSERT_TABLE_NAME_HERE';
-
 class Rename_model extends CI_Model 
 {
+    private $table = 'INSERT_TABLE_NAME_HERE';
+    
     public function __construct()
     {
       parent::__construct();
