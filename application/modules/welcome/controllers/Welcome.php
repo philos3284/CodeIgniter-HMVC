@@ -19,7 +19,8 @@ class Welcome extends MX_Controller
     {
       $this->load->view('welcome');
     }
-	
+    
+    // Example:
     public function get($param) 
     {
       $query = $this->model->get($param);
