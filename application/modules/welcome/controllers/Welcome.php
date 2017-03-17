@@ -20,9 +20,9 @@ class Welcome extends MX_Controller
     }
     
     // Example:
-    public function get($param) 
+    public function rename($param) 
     {
-      $query = $this->model->get($param);
+      $query = $this->model->rename($param);
       return $query;
     }
 	
