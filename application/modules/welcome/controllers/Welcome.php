@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends MX_Controller 
 {
-    private $model = $this->load->model('INSERT_MODEL_NAME_HERE');
+    private $model = 'INSERT_MODEL_NAME_HERE';
 
     public function __construct()
     {
@@ -11,7 +11,7 @@ class Welcome extends MX_Controller
      // NOTE: If you autoload the form_validation class you don't need to call it here
         $this->load->library('form_validation');
         $this->form_validation->CI =& $this; // Bug fix for CI form validation to function properly.
-        $this->model;
+        $this->load->model($this->model);
     }
 	
     public function index()
@@ -22,7 +22,8 @@ class Welcome extends MX_Controller
     // Example:
     public function rename($param) 
     {
-      $query = $this->model->rename($param);
+      $model = $this->model;
+      $query = $this->$model->rename($param);
       return $query;
     }
 	
