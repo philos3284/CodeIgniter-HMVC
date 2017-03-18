@@ -5,8 +5,8 @@ class Welcome extends MY_Controller
     public function __construct()
     {
       parent::__construct();
-     // IMPORTANT: Add these lines to all controllers to prevent callback errors when using form validation.
-     // NOTE: If you autoload the form_validation class you don't need to call it here
+     /* NOTE: Add these lines to all controllers to prevent callback errors when using form validation. 
+	If you autoload the form_validation class you don't need to call it here */
         $this->load->library('form_validation');
         $this->form_validation->CI =& $this; // Bug fix for CI form validation to function properly.
         $this->load->model('mdl_Welcome');
