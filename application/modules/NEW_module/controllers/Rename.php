@@ -10,8 +10,8 @@ class Rename extends MY_Controller
         If you autoload the form_validation class you don't need to call it here */
         $this->load->library('form_validation');
         $this->form_validation->CI =& $this; // Bug fix for CI form validation to function properly.
-        $this->load->model('mdl_Rename');
-        $this->model = $this->mdl_Rename;
+        $this->load->model('INSERT_MODEL_HERE');
+        $this->model = $this->INSERT_MODEL_HERE;
     }
 	
     public function index()
