@@ -18,7 +18,7 @@ class Welcome extends MY_Controller
       $this->load->view('welcome');
     }
     
-    // Example:
+    // EXAMPLE:
     public function rename($param) 
     {
       $query = $this->model->rename($param);
