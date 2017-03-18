@@ -1,13 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Rename_model extends CI_Model 
+class mdl_Rename extends MY_Model 
 {
-    private $table = 'INSERT_TABLE_NAME_HERE';
-    
     public function __construct()
     {
       parent::__construct();
+      $this->table = 'INSERT_TABLE_HERE';
     }
 
     public function get($order_by) 
