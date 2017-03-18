@@ -1,12 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Welcome_model extends CI_Model 
+class mdl_Welcome extends MY_Model 
 {
-    private $table = 'INSERT_TABLE_NAME_HERE';
-    
     public function __construct()
     {
       parent::__construct();
+      $this->table = 'INSERT_TABLE_HERE';
     }
 
     // Example:
