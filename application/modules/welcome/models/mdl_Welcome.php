@@ -12,7 +12,7 @@ class mdl_Welcome extends MY_Model
     public function rename($param) 
     {
       $this->db->order_by($param);
-      $query=$this->db->get($this->table);
+      $query = $this->db->get($this->table);
       return $query;
     }
     
