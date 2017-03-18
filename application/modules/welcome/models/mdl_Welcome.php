@@ -8,7 +8,7 @@ class mdl_Welcome extends MY_Model
       $this->table = 'INSERT_TABLE_HERE';
     }
 
-    // Example:
+    // EXAMPLE:
     public function rename($param) 
     {
       $this->db->order_by($param);
