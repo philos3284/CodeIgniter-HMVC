@@ -22,9 +22,9 @@ class Welcome extends MY_Controller
     }
     
     // EXAMPLE:
-    public function rename($param) 
+    public function fetch_db_data($id) 
     {
-      $query = $this->model->rename($param);
+      $query = $this->model->get($id);
       return $query;
     }
 	
