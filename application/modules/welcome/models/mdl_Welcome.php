@@ -8,10 +8,10 @@ class mdl_Welcome extends MY_Model
       $this->table = 'INSERT_TABLE_HERE';
     }
 
-    // EXAMPLE:
-    public function rename($param) 
+    //== EXAMPLE ==//
+    public function fetch_db_data($id) 
     {
-      $this->db->order_by($param);
+      $this->db->order_by($id);
       $query = $this->db->get($this->table);
       return $query;
     }
