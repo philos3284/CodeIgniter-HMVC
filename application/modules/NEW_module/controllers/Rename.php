@@ -12,7 +12,7 @@ class Rename extends MY_Controller
 
      // Load library
         $this->load->library('form_validation');
-     // Fix for CI form_validation to function properly.
+     // Fix for CI form_validation to function properly
         $this->form_validation->CI =& $this;
 	    
      // Load model
