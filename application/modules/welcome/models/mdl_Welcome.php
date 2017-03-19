@@ -9,7 +9,7 @@ class mdl_Welcome extends MY_Model
     }
 
     //== EXAMPLE ==//
-    public function fetch_db_data($id) 
+    public function get($id) 
     {
       $this->db->order_by($id);
       $query = $this->db->get($this->table);
