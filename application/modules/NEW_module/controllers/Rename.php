@@ -21,10 +21,6 @@ class Rename extends MY_Controller
       $this->load->view('rename');
     }
 
-	
-	
-	
-	
     public function get($order_by) 
     {
       $query = $this->model->get($order_by);
