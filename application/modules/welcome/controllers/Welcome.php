@@ -9,8 +9,9 @@ class Welcome extends MY_Controller
         NOTE: Add these lines to all controllers to prevent callback errors when using form validation. If you autoload the             form_validation class you don't need to call it here.
     */
 
-     // Bug fix for CI form validation to function properly.
+     // Load library
         $this->load->library('form_validation');
+     // Fix for CI form_validation to function properly.
         $this->form_validation->CI =& $this;
 	    
      // Load model
