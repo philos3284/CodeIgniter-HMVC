@@ -21,7 +21,7 @@ class Welcome extends MY_Controller
       $this->load->view('welcome');
     }
     
-    // EXAMPLE:
+    //== EXAMPLE ==//
     public function fetch_db_data($id) 
     {
       $query = $this->model->get($id);
