@@ -9,9 +9,13 @@ class Rename extends MY_Controller
     /* 
         NOTE: Add these lines to all controllers to prevent callback errors when using form validation. If you autoload the           form_validation class you don't need to call it here.
     */
+
+     // Load library
         $this->load->library('form_validation');
-     // Bug fix for CI form validation to function properly.
+     // Fix for CI form_validation to function properly.
         $this->form_validation->CI =& $this;
+	    
+     // Load model
         $this->load->model('INSERT_MODEL_HERE');
         $this->model = $this->INSERT_MODEL_HERE;
     }
