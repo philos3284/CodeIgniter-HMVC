@@ -7,7 +7,7 @@ class Welcome extends MY_Controller
     {
       parent::__construct();
     /* 
-        NOTE: Add these lines to all controllers to prevent callback errors when using form validation. If you autoload the             form_validation class you don't need to call it here.
+        NOTE: Add these lines to all controllers to prevent callback errors when using form validation. If you autoload the form_validation class you don't need to call it here.
     */
 
      // Load library
