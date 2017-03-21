@@ -6,12 +6,10 @@ class Rename extends MY_Controller
     public function __construct()
     {
         parent::__construct();
-     // NOTE: Add these lines to all controllers to prevent callback errors when using form validation. If you autoload the form_validation class you don't need to call it here.
-     // Load library
+     // NOTE: Add the top two lines to all controllers to prevent callback errors during form validation. If you autoload form validation you don't have to call it here.
         $this->load->library('form_validation');
-     // Fix for CI form_validation to function properly
+     // IMPORTANT: Bug fix for CI form_validation to function properly
         $this->form_validation->CI =& $this;
-     // Load model
         $this->load->model('INSERT_MODEL_HERE');
         $this->model = $this->INSERT_MODEL_HERE;
     }
