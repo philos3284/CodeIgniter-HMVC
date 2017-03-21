@@ -8,7 +8,7 @@ class mdl_Welcome extends MY_Model
       $this->table = 'INSERT_TABLE_HERE';
     }
 
-    //== EXAMPLE ==//
+    //== EXAMPLE
     public function get($id) 
     {
       $this->db->order_by($id);
