@@ -5,7 +5,8 @@ A boilerplate for creating CodeIgniter HMVC projects quickly. This project is so
 
 <h2>Form Validation</h2>
 If you have trouble running form validation, add '$this' to your code, for example:
-<br>
+
+
 Change this:
 
 <pre><code>
