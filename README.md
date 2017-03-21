@@ -3,7 +3,7 @@ A boilerplate for creating CodeIgniter HMVC projects quickly. This project is so
 
 # FAQ's
 
-<b>Form Validation</b>
+<h2>Form Validation</h2>
 - If you have trouble running form validation, add '$this' to your code:
 
 <b>For example:</b>
