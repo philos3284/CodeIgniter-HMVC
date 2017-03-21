@@ -4,9 +4,7 @@ A boilerplate for creating CodeIgniter HMVC projects quickly. This project is so
 # FAQ's
 
 <h2>Form Validation</h2>
-- If you have trouble running form validation, add '$this' to your code:
-
-<b>For example:</b>
+If you have trouble running form validation, add '$this' to your code, for example:
 
 Change this:
 
